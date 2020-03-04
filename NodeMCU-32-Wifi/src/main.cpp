@@ -3,8 +3,8 @@
 #include <HTTPClient.h>
 #include "ArduinoJson.h"
 
-const char* ssid = "AndroidAP";
-const char* password =  "ninjanet";
+const char* ssid = "AndroidAP";     // <-- You should set this
+const char* password =  "ninjanet"; // <-- You should set this
 
 HTTPClient http;
 StaticJsonDocument<1024> data;
@@ -28,8 +28,8 @@ void loop() {
   // 471 - Elektrovej (Lundtoftevej), North bound
   // 499 - Elektrovej (Lundtoftevej), South bound
   // 6026 - Rævehøjvej, DTU (Helsingørmotorvejen), North bound
-  // 6015 - Rævehøjvej, DTU (Helsingørmotorvejen), South bound
-  http.begin("http://movia-oi-x.azurewebsites.net/api/stop/499");  
+  // 6015 - Rævehøjvej, DTU (Helsingørmotorvejen), South bound  
+  http.begin("http://movia-oi-x.azurewebsites.net/api/stop/499");  // <-- You can change StopPointId here
   int httpCode = http.GET();  
   
   //Check for the returning code
