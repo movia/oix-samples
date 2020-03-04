@@ -51,9 +51,11 @@ void loop() {
       return;
   }
 
+  // Print time
   const char* time = data["time"];
   Serial.printf("Time: %s\n", time);
   
+  // Print each departure
   JsonArray departures = data["departures"].as<JsonArray>();
   Serial.printf("%d departures\n", departures.size());
   for (JsonVariant departure : departures) {
