@@ -7,7 +7,7 @@ We encourage to use [Platform IO IDE](https://platformio.org/install), as it eas
 ## Code Samples:
 
 ### NodeMCU-32 Connection via Wifi
-Even though wifi will almost certainly not be available in general at bus stops, and in generel consumes a lot of power, this sample shows how you can use a nearby wifi network to get data: It also allows you to focus on the presentation of the data rather than network connectivity, e.g. using your smartphone as an access point.
+Even though wifi will almost certainly not be available in general at bus stops, and in generel consumes a lot of power, this sample shows how you can use a nearby wifi network to get data. It also allows you to focus on the presentation of the data rather than network connectivity, e.g. using your smartphone as an access point.
 
 [Show me the code](/NodeMCU-32-Wifi/src/main.cpp)
 
